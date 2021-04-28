@@ -16,7 +16,6 @@ def get_wiki_links(path, data):
         for value in data:
             links_file.write(f'{value}\n')
 
-
 def get_md5_hash(save_path, source_path):
     print('Get & save MD5 hash.')
     with open(save_path, 'w', encoding='utf-8') as md5_file:
