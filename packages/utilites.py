@@ -20,5 +20,5 @@ def get_countries_wiki_links(path, data):
 def get_countries_md5_hash(save_path, source_path):
     print('Get & save MD5 hash.')
     with open(save_path, 'w', encoding='utf-8') as md5_file:
-        for hash in generate_md5_hash(source_path):
-            md5_file.write(f"{hash}\n")
+        for hash_string in generate_md5_hash(source_path):
+            md5_file.write(f"{hash_string}\n")
