@@ -5,8 +5,8 @@ def makedir(path):
     if os.path.exists(path) is False:
         os.mkdir(path)
 
-def generate_hash(path):
-    with open(path, encoding="utf-8") as file:
+def generate_hash(source_path):
+    with open(source_path, encoding="utf-8") as file:
         for line in file:
             yield f"{line}MD5 hash: {md5(line.encode()).hexdigest()}\n"
 
