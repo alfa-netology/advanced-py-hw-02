@@ -15,4 +15,4 @@ class WikiCountryLink:
     def __next__(self):
         country_name = next(self.countries_names_iter)
         country_url = f'{self.WIKI_URL}{country_name.replace(" ", "_")}'
-        return f"{country_name:<50}{country_url}"
+        return f"{country_name}, {country_url}"
