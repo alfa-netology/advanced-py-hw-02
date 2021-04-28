@@ -1,7 +1,9 @@
 from packages.classes import WikiCountryLink
+from packages import utilites
 
+data = WikiCountryLink('data/countries.json')
 
-x = WikiCountryLink('data/countries.json')
+utilites.makedir('output/')
 
-for i in x:
-    print(i)
+links_file = 'output/countries_wiki_links.txt'
+utilites.get_countries_wiki_links(links_file, data)
