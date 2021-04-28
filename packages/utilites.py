@@ -8,7 +8,7 @@ def makedir(path):
 def generate_md5_hash(path):
     with open(path, encoding="utf-8") as file:
         for line in file:
-            yield f"{line}MD5 hash:{hashlib.md5(line.encode()).hexdigest()}\n"
+            yield f"{line}MD5 hash: {hashlib.md5(line.encode()).hexdigest()}\n"
 
 def get_wiki_links(path, data):
     print('Get & save wiki links for countries.')
