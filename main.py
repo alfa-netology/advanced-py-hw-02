@@ -1,4 +1,4 @@
-from packages.classes.wiki import WikiCountryLink
+from packages.classes import WikiCountryLink
 
 
 x = WikiCountryLink('data/countries.json')
